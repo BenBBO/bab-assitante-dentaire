@@ -1,8 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
 import "bootstrap";
+import { ObserveVisibility } from 'vue-observe-visibility'
 
+Vue.directive('observe-visibility', ObserveVisibility)
 
 Vue.config.productionTip = false
 

@@ -1,10 +1,6 @@
 <template>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+  <nav id="main-navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
     <div class="container">
-      <router-link class="navbar-brand" to="/">
-        <img id="logo" alt="Babnana logo" src="@/assets/logo.jpg" />
-        <span id="header-name">Barbara Bouillet</span>
-      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,49 +13,19 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navigationContent">
-        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-          <router-link
-            to="/"
-            class="nav-link"
-            v-slot="{ href, navigate, isExactActive }"
-          >
-            <li :class="{ 'nav-item': true, active: isExactActive }">
-              <a :href="href" class="unstyled-link" @click="navigate"
-                >Acceuil</a
-              >
-            </li>
-          </router-link>
-          <router-link
-            to="/services"
-            class="nav-link"
-            v-slot="{ href, navigate, isExactActive }"
-          >
-            <li :class="{ 'nav-item': true, active: isExactActive }">
-              <a :href="href" class="unstyled-link" @click="navigate"
-                >Prestations</a
-              >
-            </li>
-          </router-link>
-          <router-link
-            to="/tarifs"
-            class="nav-link"
-            v-slot="{ href, navigate, isExactActive }"
-          >
-            <li :class="{ 'nav-item': true, active: isExactActive }">
-              <a :href="href" class="unstyled-link" @click="navigate">Tarifs</a>
-            </li>
-          </router-link>
-          <router-link
-            to="/about"
-            class="nav-link"
-            v-slot="{ href, navigate, isExactActive }"
-          >
-            <li :class="{ 'nav-item': true, active: isExactActive }">
-              <a :href="href" class="unstyled-link" @click="navigate"
-                >A propos</a
-              >
-            </li>
-          </router-link>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a href="#prestation" class="nav-link">Prestations</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tarif" class="nav-link">Tarifs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">A propos</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -73,32 +39,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#logo {
-  height: 5em;
-}
+// #logo {
+//   height: 5em;
+// }
 
-.navbar {
-  background-color: white;
+// .navbar {
+//   background-color: white;
 
-  .nav-link {
-    font-size: 1.5em;
-  }
+//   .nav-link {
+//     font-size: 1.5em;
+//   }
 
-  .nav-item.active {
-    border-top: 5px solid #f6da73;
-  }
+//   .nav-item.active {
+//     border-top: 5px solid #f6da73;
+//   }
 
-  .nav-item {
-    border-top: 5px solid white;
-    &:hover {
-      border-top: 5px solid #f6da73;
-    }
-  }
-}
+//   .nav-item {
+//     border-top: 5px solid white;
+//     &:hover {
+//       border-top: 5px solid #f6da73;
+//     }
+//   }
+// }
 
-.unstyled-link,
-.unstyled-link:hover {
-  color: inherit;
-  text-decoration: none;
-}
+// .unstyled-link,
+// .unstyled-link:hover {
+//   color: inherit;
+//   text-decoration: none;
+// }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div id="backgroundPicture">
-    <div class="description">
+  <div id="home" class="d-flex">
+    <div class="description align-self-center p-5">
       <div class="catch-phrase">Travaillons ensemble pour demain</div>
       <div class="name">Barbara Bouillet</div>
       <p class="titre">Assistante dentaire indépendante.</p>
@@ -20,18 +20,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-#backgroundPicture {
+#home {
   position: relative;
   min-height: 100vh;
   background: url("../assets/main-bab.png") no-repeat top;
   background-size: cover;
 
   .description {
-    position: absolute;
-    top: 50%; /* poussé de la moitié de hauteur du référent */
-    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
-    width: 50%;
-    margin-left: 10%;
+    width: 60vw;
 
     .catch-phrase {
       text-transform: uppercase;
