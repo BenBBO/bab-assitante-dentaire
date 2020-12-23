@@ -1,5 +1,6 @@
 <template>
   <div id="prestation" class="container">
+    <h1 class="main-title">Prestations</h1>
     <div class="row">
       <PrestationCard
         class="col-lg-4 col-md-6 mt-4"

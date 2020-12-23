@@ -5,6 +5,7 @@
     <div data-spy="scroll" data-target="#main-navbar" data-offset="0">
       <Acceuil />
       <Prestation class="prestation"  />
+      <Tarifs />
     </div>
   </div>
 </template>
@@ -13,9 +14,10 @@
 import Header from "@/components/Header.vue";
 import Acceuil from "@/components/Acceuil.vue";
 import Prestation from "@/components/Prestation.vue";
+import Tarifs from "@/components/Tarifs.vue";
 
 export default {
-  components: { Header, Acceuil, Prestation },
+  components: { Header, Acceuil, Prestation, Tarifs },
 };
 </script>
 <style lang="scss">
@@ -23,6 +25,10 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
 .prestation{
-  margin-top: 5em;
+  margin: 3em auto;
+}
+
+.main-title{
+  text-align: center;
 }
 </style>
