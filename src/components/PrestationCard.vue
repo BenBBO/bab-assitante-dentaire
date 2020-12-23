@@ -38,11 +38,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .prestation-card {
-  position: relative;
-  cursor: pointer;
+  position: relative;  
 
-  .face {
-    width: 300px;
+  .face {    
     height: 200px;
     transition: 0.5s;
 
