@@ -4,8 +4,8 @@
 
     <div data-spy="scroll" data-target="#main-navbar" data-offset="0">
       <Acceuil />
-      <Prestation class="prestation"  />
-      <Tarifs />
+      <Prestation class="zone-container"  />
+      <Tarifs class="zone-container" />
     </div>
   </div>
 </template>
@@ -21,14 +21,21 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
-.prestation{
-  margin: 3em auto;
+.zone-container{  
+  padding-bottom: 2rem;
 }
 
 .main-title{
+  padding-top: 1rem;
   text-align: center;
+}
+
+.subtitle{
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: lighter;
 }
 </style>
