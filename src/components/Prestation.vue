@@ -33,7 +33,7 @@
       />
       <PrestationCard
         class="col-lg-4 col-md-6 mt-4"
-        title="Acceuil"
+        title="Accueil"
         color="#CBA528"
         iconName="info-circle"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."

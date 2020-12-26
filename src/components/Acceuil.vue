@@ -6,9 +6,9 @@
       <p class="titre">Assistante dentaire indépendante.</p>
       <p class="prestations">
         Acompagnatrice à l'hygiène bucco-dentaire (tout public). Aide à
-        l'évasion et à la détente au soin des enfants. Artisanat en pose de
-        facettes lumineers. Assistanat en 4 ou 6 mains en implantologie,
-        chirurgie ou tout type de soin.
+        l'évasion et à la détente au soin des enfants. <br />
+        Artisanat en pose de facettes lumineers. Assistanat en 4 ou 6 mains en
+        implantologie, chirurgie ou tout type de soin.
       </p>
       <button type="button" class="btn btn-outline-primary">Prestations</button>
     </div>
