@@ -10,11 +10,9 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@fortawesome/vue-fontawesome": "^2.0.2",
-    "@popperjs/core": "^2.6.0",
     "bootstrap": "^5.0.0-beta1",
+    "bootstrap-vue": "^2.21.1",
     "core-js": "^3.6.5",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
     "vue": "^2.6.11",
     "vue-observe-visibility": "^0.4.6",
     "vue-router": "^3.2.0"
