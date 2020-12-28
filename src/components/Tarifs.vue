@@ -131,6 +131,8 @@ $headingbg: #f0f4f2;
   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  width: 100%;
+
   &:first-child {
     margin-right: 2em;
   }
@@ -153,11 +155,6 @@ $headingbg: #f0f4f2;
       border-bottom: none;
     }
 
-    // .price {
-    //   float: right;
-    //   position: relative;
-    //   right: 30px;
-    // }
     .options {
       display: block;
       list-style: none;
@@ -193,7 +190,7 @@ p {
     padding: 1em;
   }
 
-  .table {
+  .tarif-table {
     margin: 0;
     margin-bottom: 1em;
 

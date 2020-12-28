@@ -25,7 +25,7 @@ export default {
 }
 
 .zone-container {
-  padding-bottom: 2rem;
+  padding-bottom: 2rem;  
 }
 
 .main-title {
