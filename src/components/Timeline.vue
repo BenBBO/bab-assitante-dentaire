@@ -1,0 +1,322 @@
+<template>
+  <div class="flex-parent">
+    <div class="input-flex-container">
+      <template v-for="dateEntry in dates">
+        <input
+          type="radio"
+          name="timeline-dot"
+          v-model="selectedDate"
+          :value="`${dateEntry.id}`"
+          :key="`input-${dateEntry.id}`"
+          :id="`input-${dateEntry.id}`"
+        />
+        <div class="dot-info" :key="`dot-${dateEntry.id}`">
+          <label class="year" :for="`input-${dateEntry.id}`" >{{ dateEntry.date }}</label>
+          <label class="label" :for="`input-${dateEntry.id}`" >{{ dateEntry.label }}</label>
+        </div>
+      </template>
+      <div id="timeline-descriptions-wrapper">
+        {{ description }}
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: "Timeline",
+  props: {
+    dates: { type: Array, required: true },
+  },
+  data() {
+    return {
+      selectedDate: null,
+    };
+  },
+  computed: {
+    description() {
+      const selectedEntry = this.dates.find((d) => d.id == this.selectedDate);
+
+      if (selectedEntry) return selectedEntry.description;
+
+      return null;
+    },
+  },
+  mounted() {
+    this.selectedDate = this.dates[0].id;
+  },
+};
+</script>
+<style lang="scss" scoped>
+$numDots: 18;
+$parentWidthBase: 0.8;
+$parentWidth: $parentWidthBase * 100vw;
+$parentMaxWidth: 1000px;
+$dotWidth: 25px;
+$active: #2c3e50;
+$inactive: #aeb6bf;
+
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  min-height: 17rem;
+  background-color: #3f6e82c2;
+  color: white;
+  padding: 2em 0 ;
+}
+
+.input-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: $parentWidth;
+  max-width: $parentMaxWidth;
+  position: relative;
+  z-index: 0;
+  margin-left: calc((#{$parentWidth} - #{$dotWidth}) / #{$numDots});
+}
+
+input {
+  width: $dotWidth;
+  height: $dotWidth;
+  background-color: $active;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $active;
+    width: $parentWidth / $numDots;
+    height: 5px;
+    max-width: $parentMaxWidth / $numDots;
+  }
+
+  &::before {
+    left: calc(#{-$parentWidth / $numDots} + #{$dotWidth / 2});
+  }
+
+  &::after {
+    right: calc(#{-$parentWidth / $numDots} + #{$dotWidth / 2});
+  }
+
+  &:checked {
+    background-color: $active;
+
+    &::before {
+      background-color: $active;
+    }
+
+    &::after {
+      background-color: $inactive;
+    }
+  }
+
+  &:checked {
+    ~ input {
+      &,
+      &::before,
+      &::after {
+        background-color: $inactive;
+      }
+    }
+
+    + .dot-info {
+      span {
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.dot-info {
+  width: $dotWidth;
+  height: $dotWidth;
+  display: block;
+
+  // background-color: red
+  visibility: hidden;
+  position: relative;
+  z-index: -1;
+
+  //position each span on top of the dot immediately before it; -1px at the end is just fudging the numbers for rounding error
+  left: calc((((#{$parentWidth} - #{$dotWidth}) / #{$numDots}) * -1) - 1px);
+
+  span,label {
+    visibility: visible;
+    position: absolute;
+    font-size: 12px;
+    cursor: pointer;
+
+    &.year {
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &.label {
+      top: -65px;
+      left: 0;
+      transform: rotateZ(-45deg);
+      width: 70px;
+      text-indent: -10px;
+    }
+  }
+}
+
+#timeline-descriptions-wrapper {
+  width: 100%;
+  margin-top: 5rem;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+
+  p {
+    margin-top: 0;
+    display: none;
+  }
+}
+
+@media (min-width: $parentMaxWidth / $parentWidthBase) {
+  .input-flex-container {
+    margin-left: #{$parentMaxWidth / $numDots + $dotWidth / 2};
+  }
+
+  input {
+    &::before {
+      left: #{- ($parentMaxWidth / $numDots) + $dotWidth / 2};
+    }
+
+    &::after {
+      right: #{- ($parentMaxWidth / $numDots) + $dotWidth / 2};
+    }
+  }
+
+  .dot-info {
+    left: calc(
+      (((#{$parentMaxWidth} - #{$dotWidth}) / #{$numDots}) * -1) - 1px
+    );
+  }
+
+  #timeline-descriptions-wrapper {
+    margin-left: #{- ($parentMaxWidth / $numDots) + $dotWidth / 2};
+  }
+}
+
+@media (max-width: 630px) {
+  .flex-parent {
+    justify-content: initial;
+  }
+
+  .input-flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    margin-top: 15vh;
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+
+  input,
+  .dot-info {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 50px;
+  }
+
+  input {
+    background-color: transparent !important;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+
+    &:checked {
+      + .dot-info {
+        background-color: $active;
+
+        span {
+          &.year {
+            font-size: 14px;
+          }
+
+          &.label {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .dot-info {
+    visibility: visible;
+    border-radius: 50%;
+    z-index: 0;
+    left: 0;
+    margin-left: -70px;
+    background-color: $inactive;
+
+    span {
+      &.year {
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ecf0f1;
+      }
+
+      &.label {
+        top: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        text-indent: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  #timeline-descriptions-wrapper {
+    margin-top: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-flex-container {
+    width: 340px;
+  }
+}
+
+@media (max-width: 400px) {
+  .input-flex-container {
+    width: 300px;
+  }
+}
+</style>

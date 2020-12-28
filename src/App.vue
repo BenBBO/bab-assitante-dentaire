@@ -4,6 +4,7 @@
     <Acceuil />
     <Prestation class="zone-container" />
     <Tarifs class="zone-container" />
+    <About class="zone-container" />
   </div>
 </template>
 
@@ -12,20 +13,21 @@ import Header from "@/components/Header.vue";
 import Acceuil from "@/components/Acceuil.vue";
 import Prestation from "@/components/Prestation.vue";
 import Tarifs from "@/components/Tarifs.vue";
+import About from "@/components/About.vue";
 
 export default {
-  components: { Header, Acceuil, Prestation, Tarifs },
+  components: { Header, Acceuil, Prestation, Tarifs, About },
 };
 </script>
 <style lang="scss">
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
-#app{
+#app {
   position: relative;
 }
 
 .zone-container {
-  padding-bottom: 2rem;  
+  padding-bottom: 2rem;
 }
 
 .main-title {
