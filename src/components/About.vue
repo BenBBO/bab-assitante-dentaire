@@ -49,56 +49,65 @@ export default {
           date: "2008-2009",
           label: "Assistante dentaire",
           description: "Formation qualifiante à Fontaine.",
-          id: 1,
+        },
+        {
+          date: "2008-2009",
+          label: "Cabinet du Dr HIRLEMANN DUTERTRE",
+          description: "Assistante dentaire en formation puis qualifiée à partir de 2009.",
+          type:"professionnel"
+        },
+        {
+          date: "2009",
+          label: "Cabinet Dr. Bernard",
+          description: "De 2009 à 2020 : Assistante dentaire qualifiée.",
+          type:"professionnel"
+        },
+        {
+          date: "2010",
+          label: "UFSBD",
+          description: "De 2010 à 2011 : Animatrice d'hygiène dentaire dans les écoles en collaboration avec l'UFSBD.",
+          type:"professionnel"
         },
         {
           date: "2011",
           label: "Logiciel JULIE",
           description:
             "Approfondissement logiciel JULIE avec Julie à Rillieu la Pape.",
-          id: 2,
         },
         {
           date: "2013",
           label: "Facettes LUMINEERS",
           description: "Tecalliage à Grenoble.",
-          id: 3,
         },
         {
           date: "2015",
           label: "I top explication à l'hygiène",
           description: "Curaprox à Lyon.",
-          id: 4,
         },
         {
           date: "2015",
           label: "Programmation Neuro-Linguistique",
           description: "M.Giorgi à Lyon.",
-          id: 5,
         },
         {
           date: "2015-2016",
           label: "Hypnose Ericksonienne",
           description: "Gema à Lyon.",
-          id: 6,
         },
         {
           date: "2018",
           label: "Hypnose Ericksonienne",
           description: "Adentia à Paris.",
-          id: 7,
         },
         {
           date: "2018",
           label: "Hygiène et stérilisation",
           description: "UFSBD.",
-          id: 8,
         },
         {
           date: "2020",
           label: "Education à la santé orale des patients",
           description: "UFSBD.",
-          id: 9,
         },
       ],
     };

@@ -3,7 +3,7 @@
     <h2>{{ title }}</h2>
     <div class="flex-parent">
       <div class="input-flex-container">
-        <template v-for="(dateEntry, index) in dates">          
+        <template v-for="(dateEntry, index) in dates">
           <input
             type="radio"
             name="timeline-dot"
@@ -11,8 +11,9 @@
             :value="`${index}`"
             :key="`input-${index}`"
             :id="`input-${index}`"
+            :class="dateEntry.type"
           />
-          <div class="dot-info" :key="`dot-${index}`">
+          <div :class="['dot-info', `${dateEntry.type}`]" :key="`dot-${index}`">
             <label class="year" :for="`input-${index}`">{{
               dateEntry.date
             }}</label>
@@ -52,7 +53,7 @@ export default {
   },
   methods: {
     incrementSelectedDate() {
-      if (this.selectedDate < (this.dates.length-1)) this.selectedDate++;
+      if (this.selectedDate < this.dates.length - 1) this.selectedDate++;
       else this.selectedDate = 0;
     },
     setAutomaticDateChange() {
@@ -79,6 +80,8 @@ $parentMaxWidth: 1000px;
 $dotWidth: 25px;
 $active: #2c3e50;
 $inactive: #aeb6bf;
+$professionnel: #cba528;
+$professionnelInactive: #887740fb;
 
 .timeline-container {
   background-color: #3f6e82c2;
@@ -153,9 +156,12 @@ input {
     &::before {
       background-color: $active;
     }
+  }
 
-    &::after {
-      background-color: $inactive;
+  &.professionnel {
+    background-color: $professionnel;
+    &:checked {
+      background-color: $professionnel;
     }
   }
 
@@ -165,6 +171,10 @@ input {
       &::before,
       &::after {
         background-color: $inactive;
+      }
+
+      &.professionnel {
+        background-color: $professionnelInactive;
       }
     }
 
@@ -288,6 +298,10 @@ input {
       + .dot-info {
         background-color: $active;
 
+        &.professionnel {
+          background-color: $professionnel;
+        }
+
         span,
         label {
           &.year {
@@ -309,6 +323,10 @@ input {
     left: 0;
     margin-left: -70px;
     background-color: $inactive;
+
+    &.professionnel {
+      background-color: $professionnelInactive;
+    }
 
     span,
     label {
