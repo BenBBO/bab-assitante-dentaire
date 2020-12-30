@@ -1,13 +1,12 @@
 <template>
   <div id="about">
-    <div class="d-flex justify-content-evenly align-items-stretch container">
-      <div class="about-image">
-        <img src="@/assets/bab-face.jpg" />
-      </div>
+    <h1 class="main-title">A propos</h1>
+    <div class="container">
       <div class="about-description">
+        <img src="@/assets/bab-face.jpg" />
         <p>
-          Barbara Bouillet née en 1986, véhiculée. Diplômée en tant
-          qu’Assistante Dentaire au CQFD de Fontaine en 2009.
+          Barbara Bouillet née en 1986. Diplômée en tant qu’Assistante Dentaire
+          au CQFD de Fontaine en 2009.
         </p>
         <p>
           Tout d’abord baignée dans l’univers des enfants, je me voyais plutôt
@@ -34,7 +33,7 @@
       </div>
     </div>
     <div class="timeline-container">
-      <Timeline :dates="formations" />
+      <Timeline :dates="formations" title="Formations et expériences professionnelles" />
     </div>
   </div>
 </template>
@@ -48,7 +47,7 @@ export default {
       formations: [
         {
           date: "2008-2009",
-          label: "Formation Assistante dentaire",
+          label: "Assistante dentaire",
           description: "Formation qualifiante à Fontaine.",
           id: 1,
         },
@@ -73,7 +72,7 @@ export default {
         },
         {
           date: "2015",
-          label: "PNL",
+          label: "Programmation Neuro-Linguistique",
           description: "M.Giorgi à Lyon.",
           id: 5,
         },
@@ -87,19 +86,19 @@ export default {
           date: "2018",
           label: "Hypnose Ericksonienne",
           description: "Adentia à Paris.",
-          id:7
+          id: 7,
         },
         {
           date: "2018",
           label: "Hygiène et stérilisation",
           description: "UFSBD.",
-          id:8
+          id: 8,
         },
         {
           date: "2020",
           label: "Education à la santé orale des patients",
           description: "UFSBD.",
-          id:9
+          id: 9,
         },
       ],
     };
@@ -108,12 +107,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 #about {
-  .about-image {
-    width: 20%;
-
+  .about-description {
     img {
+      border-radius: 50%;
       max-width: 100%;
-      height: auto;
+      height: 25em;
+      float: left;
+      shape-outside: circle(50%);
+      margin-right: 3em;
     }
   }
 }

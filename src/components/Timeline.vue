@@ -1,22 +1,29 @@
 <template>
-  <div class="flex-parent">
-    <div class="input-flex-container">
-      <template v-for="dateEntry in dates">
-        <input
-          type="radio"
-          name="timeline-dot"
-          v-model="selectedDate"
-          :value="`${dateEntry.id}`"
-          :key="`input-${dateEntry.id}`"
-          :id="`input-${dateEntry.id}`"
-        />
-        <div class="dot-info" :key="`dot-${dateEntry.id}`">
-          <label class="year" :for="`input-${dateEntry.id}`" >{{ dateEntry.date }}</label>
-          <label class="label" :for="`input-${dateEntry.id}`" >{{ dateEntry.label }}</label>
+  <div class="timeline-container">
+    <h2>{{ title }}</h2>
+    <div class="flex-parent">
+      <div class="input-flex-container">
+        <template v-for="(dateEntry, index) in dates">          
+          <input
+            type="radio"
+            name="timeline-dot"
+            v-model="selectedDate"
+            :value="`${index}`"
+            :key="`input-${index}`"
+            :id="`input-${index}`"
+          />
+          <div class="dot-info" :key="`dot-${index}`">
+            <label class="year" :for="`input-${index}`">{{
+              dateEntry.date
+            }}</label>
+            <label class="label" :for="`input-${index}`">{{
+              dateEntry.label
+            }}</label>
+          </div>
+        </template>
+        <div id="timeline-descriptions-wrapper">
+          {{ description }}
         </div>
-      </template>
-      <div id="timeline-descriptions-wrapper">
-        {{ description }}
       </div>
     </div>
   </div>
@@ -26,23 +33,41 @@ export default {
   name: "Timeline",
   props: {
     dates: { type: Array, required: true },
+    title: { type: String },
   },
   data() {
     return {
-      selectedDate: null,
+      selectedDate: 0,
+      interval: null,
     };
   },
   computed: {
     description() {
-      const selectedEntry = this.dates.find((d) => d.id == this.selectedDate);
+      const selectedEntry = this.dates[this.selectedDate];
 
       if (selectedEntry) return selectedEntry.description;
 
       return null;
     },
   },
+  methods: {
+    incrementSelectedDate() {
+      if (this.selectedDate < (this.dates.length-1)) this.selectedDate++;
+      else this.selectedDate = 0;
+    },
+    setAutomaticDateChange() {
+      if (this.interval) clearInterval(this.interval);
+
+      this.interval = setInterval(this.incrementSelectedDate, 4000);
+    },
+  },
   mounted() {
-    this.selectedDate = this.dates[0].id;
+    this.setAutomaticDateChange();
+  },
+  watch: {
+    selectedDate() {
+      this.setAutomaticDateChange();
+    },
   },
 };
 </script>
@@ -55,6 +80,13 @@ $dotWidth: 25px;
 $active: #2c3e50;
 $inactive: #aeb6bf;
 
+.timeline-container {
+  background-color: #3f6e82c2;
+  color: white;
+  padding: 2em 0;
+  text-align: center;
+}
+
 .flex-parent {
   display: flex;
   flex-direction: column;
@@ -62,9 +94,6 @@ $inactive: #aeb6bf;
   align-items: center;
   width: 100%;
   min-height: 17rem;
-  background-color: #3f6e82c2;
-  color: white;
-  padding: 2em 0 ;
 }
 
 .input-flex-container {
@@ -77,6 +106,7 @@ $inactive: #aeb6bf;
   position: relative;
   z-index: 0;
   margin-left: calc((#{$parentWidth} - #{$dotWidth}) / #{$numDots});
+  margin-top: 70px;
 }
 
 input {
@@ -160,14 +190,15 @@ input {
   //position each span on top of the dot immediately before it; -1px at the end is just fudging the numbers for rounding error
   left: calc((((#{$parentWidth} - #{$dotWidth}) / #{$numDots}) * -1) - 1px);
 
-  span,label {
+  span,
+  label {
     visibility: visible;
     position: absolute;
     font-size: 12px;
     cursor: pointer;
 
     &.year {
-      bottom: -30px;
+      bottom: -3rem;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -230,9 +261,9 @@ input {
   .input-flex-container {
     flex-wrap: wrap;
     justify-content: center;
-    width: 400px;
+    width: 90%;
     height: auto;
-    margin-top: 15vh;
+    margin-top: 3rem;
     margin-left: 0;
     padding-bottom: 30px;
   }
@@ -241,7 +272,7 @@ input {
   .dot-info {
     width: 60px;
     height: 60px;
-    margin: 0 10px 50px;
+    margin: 0 15px 70px;
   }
 
   input {
@@ -257,7 +288,8 @@ input {
       + .dot-info {
         background-color: $active;
 
-        span {
+        span,
+        label {
           &.year {
             font-size: 14px;
           }
@@ -278,7 +310,8 @@ input {
     margin-left: -70px;
     background-color: $inactive;
 
-    span {
+    span,
+    label {
       &.year {
         top: 0;
         left: 0;

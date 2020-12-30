@@ -29,7 +29,7 @@
         title="Travail au fauteuil"
         color="#FF7F26"
         iconName="tooth"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+        :description="travailFauteuil"        
       />
       <PrestationCard
         class="col-lg-4 col-md-6 mt-4"
@@ -50,9 +50,15 @@
 </template>
 <script>
 import PrestationCard from "@/components/PrestationCard.vue";
+import test from '@/ressources/prestations/travailFauteuil.html';
 export default {
   name: "Prestation",
   components: { PrestationCard },
+  data(){
+    return {
+      travailFauteuil : test
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

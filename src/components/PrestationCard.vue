@@ -8,8 +8,8 @@
     </div>
     <div class="face face2">
       <div class="content">
-        <p>
-          {{ description }}
+        <p v-html="description">
+          
         </p>
       </div>
     </div>
