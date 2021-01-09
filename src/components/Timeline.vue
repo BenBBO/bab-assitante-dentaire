@@ -73,7 +73,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$numDots: 18;
+$numDots: 24;
 $parentWidthBase: 0.8;
 $parentWidth: $parentWidthBase * 100vw;
 $parentMaxWidth: 1000px;
@@ -179,7 +179,8 @@ input {
     }
 
     + .dot-info {
-      span {
+      span,
+      label {
         font-size: 13px;
         font-weight: bold;
       }
@@ -214,11 +215,11 @@ input {
     }
 
     &.label {
-      top: -65px;
+      top: -80px;
       left: 0;
       transform: rotateZ(-45deg);
-      width: 70px;
-      text-indent: -10px;
+      width: 8em;
+      text-align: left;
     }
   }
 }
@@ -282,7 +283,7 @@ input {
   .dot-info {
     width: 60px;
     height: 60px;
-    margin: 0 15px 70px;
+    margin: 0 25px 70px;
   }
 
   input {
@@ -345,9 +346,9 @@ input {
       &.label {
         top: calc(100% + 5px);
         left: 50%;
-        transform: translateX(-50%);
-        text-indent: 0;
+        transform: translateX(-50%);        
         text-align: center;
+        padding-left: 0px;
       }
     }
   }

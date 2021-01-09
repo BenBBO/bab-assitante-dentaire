@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="d-flex">
-    <div class="description align-self-center p-5">
+    <div class="description align-self-center">
       <div class="catch-phrase">Travaillons ensemble pour demain</div>
       <div class="name">Barbara Bouillet</div>
       <p class="titre">Assistante dentaire indépendante.</p>
@@ -10,13 +10,28 @@
         Artisanat en pose de facettes lumineers. Assistanat en 4 ou 6 mains en
         implantologie, chirurgie ou tout type de soin.
       </p>
-      <button type="button" class="btn btn-outline-primary">Prestations</button>
+    </div>
+    <div class="indicators align-self-center d-flex">
+      <CircularJauge
+        displayedNumber="12"
+        numberColor="#ff7f26"
+        subtext="Ans d'expérience"
+      />
+      <CircularJauge
+        displayedNumber="2"
+        numberColor="#ff7f26"
+        subtext="Zones"
+        description="Grenoble / Bourgoin-Jailleu"
+      />
     </div>
   </div>
 </template>
 <script>
+import CircularJauge from "@/components/CircularJauge.vue";
+
 export default {
   name: "Main",
+  components: { CircularJauge },
 };
 </script>
 <style lang="scss" scoped>
@@ -25,9 +40,16 @@ export default {
   min-height: 100vh;
   background: url("../assets/main-bab.png") no-repeat top;
   background-size: cover;
+  flex-direction: column;
+  justify-content: center;
 
-  .description {
+  .description,
+  .indicators {
     width: 60vw;
+
+    ::v-deep .circle-container {
+      margin-right: 2em;
+    }
 
     .catch-phrase {
       text-transform: uppercase;
@@ -57,6 +79,10 @@ export default {
       line-height: 2em;
       font-weight: lighter;
     }
+  }
+
+  .indicators {
+    margin-top: 2em;
   }
 }
 </style>

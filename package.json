@@ -14,6 +14,7 @@
     "bootstrap-vue": "^2.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-number-animation": "^1.0.5",
     "vue-observe-visibility": "^0.4.6",
     "vue-router": "^3.2.0"
   },
