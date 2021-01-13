@@ -19,7 +19,7 @@
                             </li>
                             <li class="d-flex">
                               <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
-                              <div class="price">65 €</div>
+                              <div class="price">55 €</div>
                           </li>
                     </ul>  
                 </p>
@@ -33,7 +33,7 @@
                             </li>
                             <li class="d-flex">
                               <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
-                              <div class="price">65 €</div>
+                              <div class="price">55 €</div>
                           </li>
                     </ul>                 
                 </p>
@@ -106,10 +106,10 @@ export default {
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 $bgcolor: rgb(203 165 40 / 0.5);
-$headingbg: #f0f4f2;
+$headingbg: #3f6e82;
 
 .tarif-container {
-  background: $bgcolor;
+  background: #efefef;
   font-family: "Poppins", sans-serif;
 
   .table-container {
@@ -143,7 +143,7 @@ $headingbg: #f0f4f2;
     padding: 20px;
     text-align: center;
     font-size: 15pt;
-    color: #272625;
+    color: white;
     text-transform: capitalize;
   }
   .block {

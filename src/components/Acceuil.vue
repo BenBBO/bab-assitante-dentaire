@@ -5,8 +5,7 @@
       <div class="name">Barbara Bouillet</div>
       <p class="titre">Assistante dentaire indépendante.</p>
       <p class="prestations">
-        Acompagnatrice à l'hygiène bucco-dentaire (tout public). Aide à
-        l'évasion et à la détente au soin des enfants. <br />
+        Accompagnatrice à l'hygiène bucco-dentaire (tout public). Aide à l'évasion et à la détente des enfants pendant leur soin. <br />
         Artisanat en pose de facettes lumineers. Assistanat en 4 ou 6 mains en
         implantologie, chirurgie ou tout type de soin.
       </p>
@@ -20,7 +19,7 @@
       <CircularJauge
         displayedNumber="2"
         numberColor="#ff7f26"
-        subtext="Zones"
+        subtext="Agglomérations"
         description="Grenoble / Bourgoin-Jailleu"
       />
     </div>

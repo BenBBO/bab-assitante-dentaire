@@ -73,10 +73,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$numDots: 24;
+$numDots: 17;
 $parentWidthBase: 0.8;
 $parentWidth: $parentWidthBase * 100vw;
-$parentMaxWidth: 1000px;
+$parentMaxWidth: 1500px;
 $dotWidth: 25px;
 $active: #2c3e50;
 $inactive: #aeb6bf;
@@ -201,6 +201,13 @@ input {
   //position each span on top of the dot immediately before it; -1px at the end is just fudging the numbers for rounding error
   left: calc((((#{$parentWidth} - #{$dotWidth}) / #{$numDots}) * -1) - 1px);
 
+  &.professionnel {
+    span,
+    label {
+      color: $professionnel;
+    }
+  }
+
   span,
   label {
     visibility: visible;
@@ -215,11 +222,10 @@ input {
     }
 
     &.label {
-      top: -80px;
+      top: -70px;
       left: 0;
       transform: rotateZ(-45deg);
-      width: 8em;
-      text-align: left;
+      width: 8em;      
     }
   }
 }
@@ -346,7 +352,7 @@ input {
       &.label {
         top: calc(100% + 5px);
         left: 50%;
-        transform: translateX(-50%);        
+        transform: translateX(-50%);
         text-align: center;
         padding-left: 0px;
       }

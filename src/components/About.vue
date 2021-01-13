@@ -19,9 +19,7 @@
           parenthèse, afin de grandir, d’évoluer, de comprendre, d’apprendre
           pour mieux appréhender demain. Longtemps je me suis cherchée dans
           toutes ces formations et ces conférences qui m’ont passionnées et
-          nourries de connaissance. Entre les facettes, les huiles essentielles,
-          les ATM, les troubles du comportement, les implants, l’accompagnement
-          à l’hygiène bucco-dentaire, la PNL, l’hypnose, la parodontite….
+          nourries de connaissance. 
         </p>
         <p>
           Aujourd’hui grâce à mes formateurs, à ma vie, je me propulse dans une
@@ -47,68 +45,93 @@ export default {
       formations: [
         {
           date: "2008-2009",
-          label: "Assistante dentaire",
-          description: "Formation qualifiante à Fontaine.",
+          label: "Diplôme d'assistante dentaire",
+          description: "Formation qualifiante au CQFD de Fontaine.",
         },
         {
           date: "2008-2009",
-          label: "Cabinet du Dr HIRLEMANN DUTERTRE",
-          description: "Assistante dentaire en formation puis qualifiée à partir de 2009.",
+          label: "Cab. du Dr HIRLEMANN DUTERTRE",
+          description: "Assistante dentaire en omnipratique et en orthodontie.",
           type:"professionnel"
         },
         {
           date: "2009",
-          label: "Cabinet Dr. Bernard",
-          description: "De 2009 à 2020 : Assistante dentaire qualifiée.",
+          label: "Cab. Dr. Bernard",
+          description: "De 2009 à 2020 : Assistante dentaire en omnipratique et en chirurgie implantaire et parodontale",
           type:"professionnel"
         },
         {
           date: "2010",
           label: "UFSBD",
-          description: "De 2010 à 2011 : Animatrice d'hygiène dentaire dans les écoles en collaboration avec l'UFSBD.",
+          description: "De 2010 à 2011 : UFSBD - Animatrice d’hygiène dentaire dans les écoles en Isère.",
           type:"professionnel"
         },
         {
           date: "2011",
-          label: "Logiciel JULIE",
+          label: "JULIE",
           description:
             "Approfondissement logiciel JULIE avec Julie à Rillieu la Pape.",
         },
         {
           date: "2013",
-          label: "Facettes LUMINEERS",
-          description: "Tecalliage à Grenoble.",
+          label: "LUMINEERS",
+          description: "Formé à la pose de facette Lumineers par le Dr Zissermann.",
+        },
+        {
+          date: "2014",
+          label: "LABOPHARE ",
+          description: "Comment optimiser l’outil téléphone au cabinet dentaire.",
         },
         {
           date: "2015",
-          label: "I top explication à l'hygiène",
-          description: "Curaprox à Lyon.",
+          label: "Curaprox",
+          description: "I TOP explication à l’hygiène bucco-dentaire.",
         },
         {
           date: "2015",
-          label: "Programmation Neuro-Linguistique",
-          description: "M.Giorgi à Lyon.",
+          label: "FORMATION ET SANTE",
+          description: "Stage de 2 jours sur le thème de l’implantologie avec le Dr VACHERET.",
+        },
+        {
+          date: "2015",
+          label: "PNL",
+          description: "Explication et mise en évidence du programme neurolinguistique par M.Giorgi.",
         },
         {
           date: "2015-2016",
-          label: "Hypnose Ericksonienne",
-          description: "Gema à Lyon.",
+          label: "GEMA ",
+          description: "Hypnose Ericksonienne à Lyon .",
+        },
+        {
+          date: "2017",
+          label: "AROMA CONSEIL ET FORMATION",
+          description: "Explication et mise en pratique de l’usage des huiles essentielles en cabinet dentaire.",
         },
         {
           date: "2018",
-          label: "Hypnose Ericksonienne",
-          description: "Adentia à Paris.",
+          label: "ADENTIA",
+          description: "Hypnose Ericksonnienne à Paris.",
         },
         {
           date: "2018",
-          label: "Hygiène et stérilisation",
-          description: "UFSBD.",
+          label: "UFSBD ",
+          description: "Mise à jour de l’hygiène et la stérilisation en classe virtuelle.",
+        },
+          {
+          date: "2019",
+          label: "EMS ",
+          description: "La parodontie clinique du diagnostic au traitement avec le Dr VANDOORNE.",
         },
         {
           date: "2020",
-          label: "Education à la santé orale des patients",
-          description: "UFSBD.",
+          label: "UFSBD",
+          description: "Education à la santé orale des patients en classe virtuelle.",
         },
+        {
+          date: "2021",
+          label: "Assistante dentaire Indépendante",
+          description: "",
+        }
       ],
     };
   },
