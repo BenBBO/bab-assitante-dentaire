@@ -3,7 +3,7 @@
     <h1 class="main-title">A propos</h1>
     <div class="container">
       <div class="about-description">
-        <img src="@/assets/bab-face.jpg" />
+        <img src="@/assets/bab-face.webp" />
         <p>
           Barbara Bouillet née en 1986. Diplômée en tant qu’Assistante Dentaire
           au CQFD de Fontaine en 2009.
@@ -19,7 +19,7 @@
           parenthèse, afin de grandir, d’évoluer, de comprendre, d’apprendre
           pour mieux appréhender demain. Longtemps je me suis cherchée dans
           toutes ces formations et ces conférences qui m’ont passionnées et
-          nourries de connaissance. 
+          nourries de connaissance.
         </p>
         <p>
           Aujourd’hui grâce à mes formateurs, à ma vie, je me propulse dans une
@@ -31,7 +31,10 @@
       </div>
     </div>
     <div class="timeline-container">
-      <Timeline :dates="formations" title="Formations et expériences professionnelles" />
+      <Timeline
+        :dates="formations"
+        title="Formations et expériences professionnelles"
+      />
     </div>
   </div>
 </template>
@@ -52,19 +55,21 @@ export default {
           date: "2008-2009",
           label: "Cab. du Dr HIRLEMANN DUTERTRE",
           description: "Assistante dentaire en omnipratique et en orthodontie.",
-          type:"professionnel"
+          type: "professionnel",
         },
         {
           date: "2009",
           label: "Cab. Dr. Bernard",
-          description: "De 2009 à 2020 : Assistante dentaire en omnipratique et en chirurgie implantaire et parodontale",
-          type:"professionnel"
+          description:
+            "De 2009 à 2020 : Assistante dentaire en omnipratique et en chirurgie implantaire et parodontale",
+          type: "professionnel",
         },
         {
           date: "2010",
           label: "UFSBD",
-          description: "De 2010 à 2011 : UFSBD - Animatrice d’hygiène dentaire dans les écoles en Isère.",
-          type:"professionnel"
+          description:
+            "De 2010 à 2011 : UFSBD - Animatrice d’hygiène dentaire dans les écoles en Isère.",
+          type: "professionnel",
         },
         {
           date: "2011",
@@ -75,12 +80,14 @@ export default {
         {
           date: "2013",
           label: "LUMINEERS",
-          description: "Formé à la pose de facette Lumineers par le Dr Zissermann.",
+          description:
+            "Formé à la pose de facette Lumineers par le Dr Zissermann.",
         },
         {
           date: "2014",
           label: "LABOPHARE ",
-          description: "Comment optimiser l’outil téléphone au cabinet dentaire.",
+          description:
+            "Comment optimiser l’outil téléphone au cabinet dentaire.",
         },
         {
           date: "2015",
@@ -90,12 +97,14 @@ export default {
         {
           date: "2015",
           label: "FORMATION ET SANTE",
-          description: "Stage de 2 jours sur le thème de l’implantologie avec le Dr VACHERET.",
+          description:
+            "Stage de 2 jours sur le thème de l’implantologie avec le Dr VACHERET.",
         },
         {
           date: "2015",
           label: "PNL",
-          description: "Explication et mise en évidence du programme neurolinguistique par M.Giorgi.",
+          description:
+            "Explication et mise en évidence du programme neurolinguistique par M.Giorgi.",
         },
         {
           date: "2015-2016",
@@ -105,7 +114,8 @@ export default {
         {
           date: "2017",
           label: "AROMA CONSEIL ET FORMATION",
-          description: "Explication et mise en pratique de l’usage des huiles essentielles en cabinet dentaire.",
+          description:
+            "Explication et mise en pratique de l’usage des huiles essentielles en cabinet dentaire.",
         },
         {
           date: "2018",
@@ -115,23 +125,26 @@ export default {
         {
           date: "2018",
           label: "UFSBD ",
-          description: "Mise à jour de l’hygiène et la stérilisation en classe virtuelle.",
+          description:
+            "Mise à jour de l’hygiène et la stérilisation en classe virtuelle.",
         },
-          {
+        {
           date: "2019",
           label: "EMS ",
-          description: "La parodontie clinique du diagnostic au traitement avec le Dr VANDOORNE.",
+          description:
+            "La parodontie clinique du diagnostic au traitement avec le Dr VANDOORNE.",
         },
         {
           date: "2020",
           label: "UFSBD",
-          description: "Education à la santé orale des patients en classe virtuelle.",
+          description:
+            "Education à la santé orale des patients en classe virtuelle.",
         },
         {
           date: "2021",
           label: "Assistante dentaire Indépendante",
           description: "",
-        }
+        },
       ],
     };
   },
@@ -140,6 +153,11 @@ export default {
 <style lang="scss" scoped>
 #about {
   .about-description {
+    
+
+    p {
+      text-align: justify;
+    }
     img {
       border-radius: 50%;
       max-width: 100%;
@@ -147,6 +165,16 @@ export default {
       float: left;
       shape-outside: circle(50%);
       margin-right: 3em;
+    }
+
+    @media (max-width: 630px) {
+      text-align: center;
+      img{
+        height: 25em;
+        shape-outside: none;
+        margin: 1em 0;
+        float: none;
+      }
     }
   }
 }

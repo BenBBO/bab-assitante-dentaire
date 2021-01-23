@@ -5,7 +5,8 @@
       <div class="name">Barbara Bouillet</div>
       <p class="titre">Assistante dentaire indépendante.</p>
       <p class="prestations">
-        Accompagnatrice à l'hygiène bucco-dentaire (tout public). Aide à l'évasion et à la détente des enfants pendant leur soin. <br />
+        Accompagnatrice à l'hygiène bucco-dentaire (tout public). Aide à
+        l'évasion et à la détente des enfants pendant leur soin. <br />
         Artisanat en pose de facettes lumineers. Assistanat en 4 ou 6 mains en
         implantologie, chirurgie ou tout type de soin.
       </p>
@@ -37,7 +38,7 @@ export default {
 #home {
   position: relative;
   min-height: 100vh;
-  background: url("../assets/main-bab.png") no-repeat top;
+  background: url("../assets/main-bab.webp") no-repeat top;
   background-size: cover;
   flex-direction: column;
   justify-content: center;
@@ -82,6 +83,16 @@ export default {
 
   .indicators {
     margin-top: 2em;
+  }
+
+  @media (max-width: 630px) {
+    background: url("../assets/bab.jpg") no-repeat top;
+
+    .description,
+    .indicators {      
+      width: 100%;
+      justify-content: center;      
+    }
   }
 }
 </style>

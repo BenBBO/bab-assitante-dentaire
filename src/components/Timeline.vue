@@ -73,7 +73,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$numDots: 17;
+$numDots: 34  ;
 $parentWidthBase: 0.8;
 $parentWidth: $parentWidthBase * 100vw;
 $parentMaxWidth: 1500px;
@@ -214,6 +214,7 @@ input {
     position: absolute;
     font-size: 12px;
     cursor: pointer;
+    text-align: left;
 
     &.year {
       bottom: -3rem;
@@ -225,7 +226,7 @@ input {
       top: -70px;
       left: 0;
       transform: rotateZ(-45deg);
-      width: 8em;      
+      width: 11em;      
     }
   }
 }
