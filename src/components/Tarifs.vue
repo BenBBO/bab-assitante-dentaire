@@ -109,7 +109,7 @@ $bgcolor: rgb(203 165 40 / 0.5);
 $headingbg: #3f6e82;
 
 .tarif-container {
-  background: #efefef;
+  background-color: #efefef;
   font-family: "Poppins", sans-serif;
 
   .table-container {
