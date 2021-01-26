@@ -5,7 +5,8 @@
     <Prestation class="zone-container" />
     <Tarifs class="zone-container" />
     <About />
-    <Contact /> 
+    <Contact />     
+    <Footer />
   </div>
 </template>
 
@@ -16,9 +17,10 @@ import Prestation from "@/components/Prestation.vue";
 import Tarifs from "@/components/Tarifs.vue";
 import About from "@/components/About.vue";
 import Contact from '@/components/Contact.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
-  components: { Header, Acceuil, Prestation, Tarifs, About, Contact },
+  components: { Header, Acceuil, Prestation, Tarifs, About, Contact, Footer },
 };
 </script>
 <style lang="scss">

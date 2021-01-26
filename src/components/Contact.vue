@@ -46,6 +46,7 @@ export default {
 <style lang="scss" scoped>
 .contact-container {
   background-color: #efefef;
+  padding-bottom: 1em;
 
   img {
     height: 15em;
