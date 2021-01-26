@@ -3,7 +3,7 @@
     <div class="container">
       <h1 class="main-title">Contact</h1>
       <div class="d-flex justify-content-center">
-        <img src="@/assets/logo.webp" alt="logo" />
+        <img src="@/assets/logo.webp" alt="logo" v-b-modal.logo-modal />
       </div>
       <div class="d-flex justify-content-around contact-info">
         <div class="d-flex flex-column text-center">
@@ -31,14 +31,22 @@
         <Emplacement />
       </div>
     </div>
+
+    <b-modal id="logo-modal" size="lg" hide-footer>
+      <template #modal-title> Notre logo </template>
+     <LogoInformation />
+
+      </b-modal
+    >
   </div>
 </template>
 
 <script>
 import Emplacement from "@/components/Emplacement.vue";
+import LogoInformation from "@/components/LogoInformation.vue";
 export default {
   name: "Contact",
-  components: { Emplacement },
+  components: { Emplacement, LogoInformation },
   // To check : background blend mode. cf : https://www.youtube.com/watch?v=wfaDzSL6ll0&ab_channel=MDB-justcodeit
 };
 </script>
@@ -96,4 +104,5 @@ export default {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+
 </style>

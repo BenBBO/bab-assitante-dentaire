@@ -73,7 +73,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$numDots: 34  ;
+$numDots: 34;
 $parentWidthBase: 0.8;
 $parentWidth: $parentWidthBase * 100vw;
 $parentMaxWidth: 1500px;
@@ -82,6 +82,10 @@ $active: #2c3e50;
 $inactive: #aeb6bf;
 $professionnel: #cba528;
 $professionnelInactive: #887740fb;
+
+h2 {
+  clear: both;
+}
 
 .timeline-container {
   background-color: #3f6e82c2;
@@ -226,7 +230,7 @@ input {
       top: -70px;
       left: 0;
       transform: rotateZ(-45deg);
-      width: 11em;      
+      width: 11em;
     }
   }
 }

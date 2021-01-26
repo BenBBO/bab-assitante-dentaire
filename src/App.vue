@@ -27,12 +27,9 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
 
-body{
-  font-family: 'Zilla Slab', serif;
-
-}
 #app {
   position: relative;
+  font-family: 'Zilla Slab', serif;
 }
 
 .zone-container {
