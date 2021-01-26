@@ -1,30 +1,32 @@
 <template>
   <div id="contact" class="contact-container">
-    <h1 class="main-title">Contact</h1>
-    <div class="d-flex container justify-content-around">
-      <img src="@/assets/logo.webp" alt="logo" />
-      <div class="contact-info d-flex flex-column justify-content-around">
-        <h2>Détails</h2>
-        <div><i class="fas fa-user"></i> Barbara Bouillet</div>
-        <div>
-          <i class="far fa-building"></i> : <b>N° Siret </b>
-          <i>892 557 042 00017</i>
-        </div>
-        <div>
-          <i class="fas fa-phone"></i> :
-          <a href="tel:0652867160"><i>06.52.82.71.60</i></a>
-        </div>
-        <div>
-          <i class="fas fa-at"></i> :
+    <div class="container">
+      <h1 class="main-title">Contact</h1>
+      <div class="d-flex justify-content-center">
+        <img src="@/assets/logo.webp" alt="logo" />
+      </div>
+      <div class="d-flex justify-content-around contact-info">
+        <div class="d-flex flex-column text-center">
+          <h2>Mail</h2>
           <a href="mailto:barbara38.assistantedentaire@gmail.com"
-            ><i>barbara38.assistantedentaire@gmail.com</i></a
+            >barbara38.assistantedentaire@gmail.com</a
           >
         </div>
-        <h2>Horaires</h2>
-        <div>Du Mardi au Vendredi</div>
-        <div>De 8h30 à 19h</div>
-      </div>
+        <div class="d-flex flex-column text-center">
+          <h2>Téléphone</h2>
 
+          <a href="tel:0652867160">06.52.82.71.60</a>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <h2>Numéro SIRET</h2>
+          892 557 042 00017
+        </div>
+        <div class="d-flex flex-column text-center">
+          <h2>Horaires</h2>
+          <div>Du Mardi au Vendredi</div>
+          <div>De 8h30 à 19h</div>
+        </div>
+      </div>
       <div class="emplacement">
         <Emplacement />
       </div>
@@ -46,14 +48,34 @@ export default {
   background-color: #efefef;
 
   img {
-    height: 10em;
+    height: 15em;
     transform: scale(1);
     animation: pulse 2s infinite;
     cursor: pointer;
   }
 
-  .emplacement {
-    width: 40%;
+  .contact-info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      color: #6d91a0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+
+    > div {
+      margin-top: 2em;
+    }
   }
 }
 

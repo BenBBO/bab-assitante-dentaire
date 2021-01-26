@@ -104,13 +104,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+
 $bgcolor: rgb(203 165 40 / 0.5);
 $headingbg: #3f6e82;
 
 .tarif-container {
   background-color: #efefef;
-  font-family: "Poppins", sans-serif;
 
   .table-container {
     margin-top: 1.5rem;

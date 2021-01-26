@@ -271,7 +271,7 @@ input {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 1024px) {
   .flex-parent {
     justify-content: initial;
   }

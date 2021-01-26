@@ -48,6 +48,6 @@ export default {
 
 <style lang="scss" scoped>
 #map{
-    height: 30vh;
+    height: 35vh;
 }
 </style>
