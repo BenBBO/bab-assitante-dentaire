@@ -89,9 +89,9 @@ export default {
     background: url("../assets/bab.jpg") no-repeat top;
 
     .description,
-    .indicators {      
+    .indicators {
       width: 100%;
-      justify-content: center;      
+      justify-content: center;
     }
   }
 }

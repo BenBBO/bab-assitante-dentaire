@@ -1,5 +1,8 @@
 <template>
-  <div :class="['prestation-card', isVisible ? 'visibleCard' : '']" v-observe-visibility="visibilityChanged">
+  <div
+    :class="['prestation-card', isVisible ? 'visibleCard' : '']"
+    v-observe-visibility="visibilityChanged"
+  >
     <div class="face face1" :style="{ background: color }">
       <div class="content">
         <i :class="['fas', `fa-${iconName}`]" />
@@ -8,9 +11,7 @@
     </div>
     <div class="face face2">
       <div class="content">
-        <p v-html="description">
-          
-        </p>
+        <p v-html="description"></p>
       </div>
     </div>
   </div>
@@ -24,23 +25,23 @@ export default {
     title: { type: String },
     description: { type: String },
   },
-  data(){
-      return {
-          isVisible : false
-      }
+  data() {
+    return {
+      isVisible: false,
+    };
   },
   methods: {
     visibilityChanged(isVisible) {
-      this.isVisible = isVisible;      
+      this.isVisible = isVisible;
     },
   },
 };
 </script>
 <style lang="scss" scoped>
 .prestation-card {
-  position: relative;  
+  position: relative;
 
-  .face {    
+  .face {
     height: 200px;
     transition: 0.5s;
 
@@ -76,18 +77,23 @@ export default {
     &.face2 {
       position: relative;
       background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
+      line-height: 160px; // 200px height - 40px de padding
       box-sizing: border-box;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
       transform: translateY(-100px);
 
       .content {
+        overflow: auto;
+        height: 100%;
+        padding: 20px;
+
         p {
           margin: 0;
           padding: 0;
+          text-align: justify;
+          vertical-align: middle;
+          display: inline-block;
+          line-height: 1.2;
         }
         a {
           margin: 15px 0 0;
