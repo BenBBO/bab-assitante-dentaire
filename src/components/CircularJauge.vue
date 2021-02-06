@@ -35,10 +35,10 @@ export default {
 <style lang="scss" scoped>
 .circle-container {
   position: relative;
-  background: #fff;
+  background-color: white;
   border-radius: 50%;
-  width: 13em;
-  height: 13em;
+  width: 9em;
+  height: 9em;
   box-shadow: 0px 0px 150px rgb(147, 167, 215, 0.18);
 
   .content {
@@ -51,7 +51,7 @@ export default {
     text-align: center;
 
     .number-displayed {
-      font-size: 5em;
+      font-size: 3em;
       line-height: 1em;
       font-weight: bold;
     }

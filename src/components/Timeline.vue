@@ -292,8 +292,8 @@ input {
 
   input,
   .dot-info {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     margin: 0 25px 70px;
   }
 

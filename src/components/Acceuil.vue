@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="d-flex">
-    <div class="description align-self-center">
+    <div class="description">
       <div class="catch-phrase">Travaillons ensemble pour demain</div>
       <div class="name">Barbara Bouillet</div>
       <p class="titre">Assistante dentaire indépendante.</p>
@@ -11,18 +11,24 @@
         implantologie, chirurgie ou tout type de soin.
       </p>
     </div>
-    <div class="indicators align-self-center d-flex">
+    <div class="indicators">
       <CircularJauge
         displayedNumber="12"
-        numberColor="#ff7f26"
+        numberColor="#3f6e82c2"
         subtext="Ans d'expérience"
       />
       <CircularJauge
         displayedNumber="2"
-        numberColor="#ff7f26"
+        numberColor="#3f6e82c2"
         subtext="Agglomérations"
         description="Grenoble / Bourgoin-Jailleu"
       />
+    </div>
+
+    <div class="description-mobile">
+      <div class="name">Barbara Bouillet</div>
+      <p class="titre">Assistante dentaire indépendante.</p>
+      <div class="catch-phrase">Travaillons ensemble pour demain</div>
     </div>
   </div>
 </template>
@@ -42,6 +48,11 @@ export default {
   background-size: cover;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  .indicators {
+    display: flex;
+  }
 
   .description,
   .indicators {
@@ -85,13 +96,57 @@ export default {
     margin-top: 2em;
   }
 
-  @media (max-width: 630px) {
-    background: url("../assets/bab.jpg") no-repeat top;
+  .description-mobile {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    min-height: 50vh;
+    align-items: unset;
 
     .description,
     .indicators {
-      width: 100%;
-      justify-content: center;
+      margin-left: 3.5em;
+    }
+  }
+  @media (max-width: 630px) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../assets/bab.jpg") no-repeat top;
+    min-height: 100vh;
+
+    .description,
+    .indicators {
+      display: none;
+    }
+
+    .description-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;      
+      font-weight: bold;
+
+      .name {
+        font-size: 2.5em;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        
+      }
+
+      .titre {
+        font-size: 1.5em;
+        color: #cba528;
+        letter-spacing: 3px;
+      }
+      .catch-phrase {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        font-weight: 100;
+        font-style: italic;
+      }
     }
   }
 }
