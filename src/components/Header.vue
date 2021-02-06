@@ -12,6 +12,21 @@
           <b-nav-item href="#about">A propos</b-nav-item>
           <b-nav-item href="#contact">Contact</b-nav-item>
         </b-navbar-nav>
+
+        <b-navbar-nav class="contact-info">
+          <div class="contact">
+            <a href="tel:0652867160">
+              <i class="fas fa-mobile-alt"></i>
+              <span>06.52.82.71.60</span></a
+            >
+          </div>
+          <div class="contact">
+            <a href="mailto:barbara38.assistantedentaire@gmail.com">
+              <i class="far fa-envelope"></i
+              ><span> barbara38.assistantedentaire@gmail.com</span></a
+            >
+          </div>
+        </b-navbar-nav>
       </b-collapse>
     </div>
   </b-navbar>
@@ -33,6 +48,38 @@ export default {
     color: white;
     margin-bottom: 0.5em;
     border: 1px solid;
+  }
+
+  #nav-collapse {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      ul {
+        width: 100%;
+        &.contact-info .contact {
+          margin-left: 0;
+          font-size: 1em;
+        }
+      }
+    }
+
+    .contact-info {
+      color: white;
+      .contact {
+        margin-left: 1em;
+        font-size: 0.8em;
+        a {
+          text-decoration: none;
+          color: inherit;
+          span {
+            margin-left: 0.5em;
+          }
+        }
+      }
+    }
   }
 
   .nav-link {

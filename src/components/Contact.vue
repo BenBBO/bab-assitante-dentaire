@@ -3,7 +3,8 @@
     <div class="container">
       <h1 class="main-title">Contact</h1>
       <div class="d-flex justify-content-center">
-        <img src="@/assets/logo.webp" alt="logo" v-b-modal.logo-modal />
+        <!-- v-b-modal.logo-modal -->
+        <img src="@/assets/logo.webp" alt="logo"  />
       </div>
       <div class="d-flex justify-content-around contact-info">
         <div class="d-flex flex-column text-center">
@@ -58,9 +59,9 @@ export default {
 
   img {
     height: 15em;
-    transform: scale(1);
-    animation: pulse 2s infinite;
-    cursor: pointer;
+    // transform: scale(1);
+    // animation: pulse 2s infinite;
+    // cursor: pointer;
   }
 
   .contact-info {
