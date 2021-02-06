@@ -1,22 +1,22 @@
 <template>
-  <div id="contact" class="contact-container">
+  <div id="contact" class="contact-container" itemscope itemtype="http://schema.org/Organization">
     <div class="container">
       <h1 class="main-title">Contact</h1>
       <div class="d-flex justify-content-center">
         <!-- v-b-modal.logo-modal -->
-        <img src="@/assets/logo.webp" alt="logo"  />
+        <img src="@/assets/logo.webp" itemprop="logo" alt="logo - Assistante dentaire 38"  />
       </div>
-      <div class="d-flex justify-content-around contact-info">
+      <div class="d-flex justify-content-around contact-info" >
         <div class="d-flex flex-column text-center">
           <h2>Mail</h2>
-          <a href="mailto:barbara38.assistantedentaire@gmail.com"
+          <a href="mailto:barbara38.assistantedentaire@gmail.com" itemprop="email"
             >barbara38.assistantedentaire@gmail.com</a
           >
         </div>
         <div class="d-flex flex-column text-center">
           <h2>Téléphone</h2>
 
-          <a href="tel:0652867160">06.52.82.71.60</a>
+          <a href="tel:0652867160" itemprop="telephone">06.52.82.71.60</a>
         </div>
         <div class="d-flex flex-column text-center">
           <h2>Numéro SIRET</h2>

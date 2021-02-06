@@ -13,17 +13,17 @@
           <b-nav-item href="#contact">Contact</b-nav-item>
         </b-navbar-nav>
 
-        <b-navbar-nav class="contact-info">
+        <b-navbar-nav class="contact-info" itemscope itemtype="http://schema.org/Organization">
           <div class="contact">
             <a href="tel:0652867160">
               <i class="fas fa-mobile-alt"></i>
-              <span>06.52.82.71.60</span></a
+              <span itemprop="telephone">06.52.82.71.60</span></a
             >
           </div>
           <div class="contact">
             <a href="mailto:barbara38.assistantedentaire@gmail.com">
               <i class="far fa-envelope"></i
-              ><span> barbara38.assistantedentaire@gmail.com</span></a
+              ><span itemprop="email"> barbara38.assistantedentaire@gmail.com</span></a
             >
           </div>
         </b-navbar-nav>

@@ -1,9 +1,9 @@
 <template>
-  <div id="home" class="d-flex">
+  <div id="home" class="d-flex" itemscope itemtype="https://schema.org/Person">
     <div class="description">
       <div class="catch-phrase">Travaillons ensemble pour demain</div>
-      <div class="name">Barbara Bouillet</div>
-      <p class="titre">Assistante dentaire indépendante.</p>
+      <div class="name" itemprop="name">Barbara Bouillet</div>
+      <p class="titre" itemprop="jobTitle">Assistante dentaire indépendante.</p>
       <p class="prestations">
         Accompagnatrice à l'hygiène bucco-dentaire (tout public). Aide à
         l'évasion et à la détente des enfants pendant leur soin. <br />
@@ -26,8 +26,8 @@
     </div>
 
     <div class="description-mobile">
-      <div class="name">Barbara Bouillet</div>
-      <p class="titre">Assistante dentaire indépendante.</p>
+      <div class="name"  itemprop="name">Barbara Bouillet</div>
+      <p class="titre" itemprop="jobTitle">Assistante dentaire indépendante.</p>
       <div class="catch-phrase">Travaillons ensemble pour demain</div>
     </div>
   </div>
@@ -111,7 +111,7 @@ export default {
   }
   @media (max-width: 630px) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../assets/bab.jpg") no-repeat top;
+      url("../assets/bab.webp") no-repeat top;
     min-height: 100vh;
 
     .description,
