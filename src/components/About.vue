@@ -16,10 +16,10 @@
         </p>
         <p>
           Des personnes m’ont offert la chance de mettre cet univers entre
-          parenthèse, afin de grandir, d’évoluer, de comprendre, d’apprendre
+          parenthèses, afin de grandir, d’évoluer, de comprendre, d’apprendre
           pour mieux appréhender demain. Longtemps je me suis cherchée dans
-          toutes ces formations et ces conférences qui m’ont passionnées et
-          nourries de connaissance.
+          toutes ces formations et ces conférences qui m’ont passionnée et
+          nourrie de connaissance.
         </p>
         <p>
           Aujourd’hui grâce à mes formateurs, à ma vie, je me propulse dans une
