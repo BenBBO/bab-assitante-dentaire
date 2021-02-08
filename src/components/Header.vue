@@ -6,7 +6,7 @@
       </b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#app">Acceuil</b-nav-item>
+          <b-nav-item href="#app">Accueil</b-nav-item>
           <b-nav-item href="#prestation">Prestations</b-nav-item>
           <b-nav-item href="#tarif">Tarifs</b-nav-item>
           <b-nav-item href="#about">A propos</b-nav-item>

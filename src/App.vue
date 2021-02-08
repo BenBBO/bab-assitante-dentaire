@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Acceuil />
+    <Accueil />
     <Prestation class="zone-container" />
     <Tarifs class="zone-container" />
     <About />
@@ -12,7 +12,7 @@
 
 <script>
 import Header from "@/components/Header.vue";
-import Acceuil from "@/components/Acceuil.vue";
+import Accueil from "@/components/Accueil.vue";
 import Prestation from "@/components/Prestation.vue";
 import Tarifs from "@/components/Tarifs.vue";
 import About from "@/components/About.vue";
@@ -20,7 +20,7 @@ import Contact from '@/components/Contact.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
-  components: { Header, Acceuil, Prestation, Tarifs, About, Contact, Footer },
+  components: { Header, Accueil, Prestation, Tarifs, About, Contact, Footer },
 };
 </script>
 <style lang="scss">
