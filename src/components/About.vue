@@ -14,7 +14,7 @@
         />
         <p>
           Barbara Bouillet née en 1986. Diplômée en tant qu’Assistante Dentaire
-          au CQFD de Fontaine en 2009.
+          au <a href="https://www.cqfd-formations.com/" target="_blank">CQFD de Fontaine</a> en 2009.
         </p>
         <p>
           Tout d’abord baignée dans l’univers des enfants, je me voyais plutôt
@@ -63,14 +63,14 @@ export default {
           type: "professionnel",
         },
         {
-          date: "2009",
-          label: "Cab. Dr. Bernard",
+          date: "2009-2020",
+          label: "Cab. Dr. BERNARD",
           description:
             "De 2009 à 2020 : Assistante dentaire en omnipratique et en chirurgie implantaire et parodontale",
           type: "professionnel",
         },
         {
-          date: "2010",
+          date: "2010-2011",
           label: "UFSBD",
           description:
             "De 2010 à 2011 : UFSBD - Animatrice d’hygiène dentaire dans les écoles en Isère.",
@@ -96,7 +96,7 @@ export default {
         },
         {
           date: "2015",
-          label: "Curaprox",
+          label: "CURAPROX",
           description: "I TOP explication à l’hygiène bucco-dentaire.",
         },
         {
@@ -147,8 +147,8 @@ export default {
         },
         {
           date: "2021",
-          label: "Assistante dentaire Indépendante",
-          description: "",
+          label: "Assistante Dentaire Indépendante",
+          description: "Numéro ADELI : Todo",
         },
       ],
     };

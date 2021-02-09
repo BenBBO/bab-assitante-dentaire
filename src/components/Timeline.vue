@@ -1,6 +1,9 @@
 <template>
   <div class="timeline-container">
-    <h2><span class="formation">Formations</span> et <span class="experience">expériences professionnelles</span></h2>
+    <h2>
+      <span class="formation">Formations</span> et
+      <span class="experience">Expériences Professionnelles</span>
+    </h2>
     <div class="flex-parent">
       <div class="input-flex-container">
         <template v-for="(dateEntry, index) in dates">
@@ -93,12 +96,12 @@ h2 {
   padding: 2em 0;
   text-align: center;
 
-  .formation{
-    color:$professionnel;
+  .formation {
+    color: $professionnel;
   }
 
-  .experience{
-    color:$active;
+  .experience {
+    color: $active;
   }
 }
 
@@ -376,6 +379,9 @@ input {
     margin-top: 30px;
     margin-left: 0;
     text-align: center;
+    position: sticky;
+    bottom: 0;
+    background-color: red;
   }
 }
 

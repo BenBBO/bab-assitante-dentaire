@@ -3,12 +3,12 @@
     <div class="description">
       <div class="catch-phrase">Travaillons ensemble pour demain</div>
       <div class="name" itemprop="name">Barbara Bouillet</div>
-      <p class="titre" itemprop="jobTitle">Assistante dentaire indépendante.</p>
+      <p class="titre" itemprop="jobTitle">Assistante dentaire indépendante.</p>      
       <p class="prestations">
-        Accompagnatrice à l'hygiène bucco-dentaire (tout public). Aide à
-        l'évasion et à la détente des enfants pendant leur soin. <br />
-        Artisanat en pose de facettes lumineers. Assistanat en 4 ou 6 mains en
-        implantologie, chirurgie ou tout type de soin.
+        Accompagnatrice à <b>l'hygiène bucco-dentaire</b> (tout public). Aide à
+        l'évasion et à la détente des <b>enfants</b> pendant leur soin. <br />
+        Assistanat en pose de <b>facettes Lumineers</b>. Assistanat en 4 ou 6
+        mains en <b>implantologie, chirurgie ou tout type de soin</b>.
       </p>
     </div>
     <div class="indicators">
@@ -26,7 +26,7 @@
     </div>
 
     <div class="description-mobile">
-      <div class="name"  itemprop="name">Barbara Bouillet</div>
+      <div class="name" itemprop="name">Barbara Bouillet</div>
       <p class="titre" itemprop="jobTitle">Assistante dentaire indépendante.</p>
       <div class="catch-phrase">Travaillons ensemble pour demain</div>
     </div>
@@ -74,6 +74,7 @@ export default {
       font-size: 1.2em;
       font-weight: bold;
       color: #cba528;
+      text-transform: capitalize;
     }
 
     .name {
@@ -81,14 +82,14 @@ export default {
       line-height: 1.1em;
       color: #2d598d;
       margin: 4px 0 10px 0;
+      text-transform: uppercase;
     }
 
     .prestations {
       text-align: justify;
       text-justify: inter-word;
       font-size: 0.9em;
-      line-height: 2em;
-      font-weight: lighter;
+      line-height: 2em;      
     }
   }
 
@@ -124,7 +125,7 @@ export default {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      text-align: center;      
+      text-align: center;
       font-weight: bold;
 
       .name {
@@ -132,7 +133,6 @@ export default {
         color: white;
         text-transform: uppercase;
         letter-spacing: 4px;
-        
       }
 
       .titre {

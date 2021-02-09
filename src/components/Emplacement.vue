@@ -4,13 +4,13 @@
     <l-marker :lat-lng="grenoble" :icon="icon">
       <l-popup>
         <div><b>Région Grenobloise</b></div>
-        <div><i>Et dans un rayon de 30 km</i></div>
+        <div><i>Et dans un rayon de 30 min</i></div>
       </l-popup>
     </l-marker>
     <l-marker :lat-lng="bourgoin" :icon="icon">
       <l-popup>
         <div><b>Région Berjallienne</b></div>
-        <div><i>Et dans un rayon de 30 km</i></div>
+        <div><i>Et dans un rayon de 30 min</i></div>
       </l-popup>
     </l-marker>
   </l-map>
@@ -50,6 +50,6 @@ export default {
 
 <style lang="scss" scoped>
 #map{
-    height: 35vh;
+    height: 40vh;
 }
 </style>

@@ -11,7 +11,9 @@
     </div>
     <div class="face face2">
       <div class="content">
-        <p v-html="description"></p>
+
+        <!-- TODO -->
+        <div v-html="description"></div>
       </div>
     </div>
   </div>

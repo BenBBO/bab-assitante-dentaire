@@ -76,7 +76,7 @@
             </p>
             </div>
             <div class="block">
-                <p>Assistanat en omnipratique et collage de Facettes    
+                <p>Assistanat en Chirurgie et collage de Facettes    
                     <ul class="options">
                     <li class="d-flex">
                         <div class="duration">Heure</div> 
