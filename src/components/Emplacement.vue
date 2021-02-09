@@ -3,12 +3,14 @@
     <l-tile-layer :url="url" />
     <l-marker :lat-lng="grenoble" :icon="icon">
       <l-popup>
-        <div>Région Grenobloise</div>
+        <div><b>Région Grenobloise</b></div>
+        <div><i>Et dans un rayon de 30 km</i></div>
       </l-popup>
     </l-marker>
     <l-marker :lat-lng="bourgoin" :icon="icon">
       <l-popup>
-        <div>Région Berjallienne</div>
+        <div><b>Région Berjallienne</b></div>
+        <div><i>Et dans un rayon de 30 km</i></div>
       </l-popup>
     </l-marker>
   </l-map>

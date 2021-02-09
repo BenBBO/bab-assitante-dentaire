@@ -2,8 +2,16 @@
   <div id="about">
     <h1 class="main-title">A propos</h1>
     <div class="container">
-      <div class="about-description" itemscope itemtype="https://schema.org/Person">
-        <img src="@/assets/bab-face.webp" itemprop="image" alt="Barbara Bouillet - assistante dentaire à Grenoble et Bourgoin Jailleu" />
+      <div
+        class="about-description"
+        itemscope
+        itemtype="https://schema.org/Person"
+      >
+        <img
+          src="@/assets/bab-face.webp"
+          itemprop="image"
+          alt="Barbara Bouillet - assistante dentaire à Grenoble et Bourgoin Jailleu"
+        />
         <p>
           Barbara Bouillet née en 1986. Diplômée en tant qu’Assistante Dentaire
           au CQFD de Fontaine en 2009.
@@ -31,10 +39,7 @@
       </div>
     </div>
     <div class="timeline-container">
-      <Timeline
-        :dates="formations"
-        title="Formations et expériences professionnelles"
-      />
+      <Timeline :dates="formations" />
     </div>
   </div>
 </template>
@@ -153,8 +158,6 @@ export default {
 <style lang="scss" scoped>
 #about {
   .about-description {
-    
-
     p {
       text-align: justify;
     }
@@ -169,7 +172,7 @@ export default {
 
     @media (max-width: 630px) {
       text-align: center;
-      img{
+      img {
         height: 25em;
         shape-outside: none;
         margin: 1em 0;
