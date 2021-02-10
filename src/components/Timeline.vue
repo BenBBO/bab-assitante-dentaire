@@ -381,7 +381,8 @@ input {
     text-align: center;
     position: sticky;
     bottom: 0;
-    background-color: red;
+    background-color: #6d91a0;
+    padding: 1em;
   }
 }
 

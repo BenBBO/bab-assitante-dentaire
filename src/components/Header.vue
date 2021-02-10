@@ -9,7 +9,7 @@
           <b-nav-item href="#app">Accueil</b-nav-item>
           <b-nav-item href="#prestation">Prestations</b-nav-item>
           <b-nav-item href="#tarif">Tarifs</b-nav-item>
-          <b-nav-item href="#about">A propos</b-nav-item>
+          <b-nav-item href="#about">A Propos</b-nav-item>
           <b-nav-item href="#contact">Contact</b-nav-item>
         </b-navbar-nav>
 

@@ -10,9 +10,7 @@
       </div>
     </div>
     <div class="face face2">
-      <div class="content">
-
-        <!-- TODO -->
+      <div class="content">        
         <div v-html="description"></div>
       </div>
     </div>
@@ -89,13 +87,14 @@ export default {
         height: 100%;
         padding: 20px;
 
-        p {
+        & > div {
           margin: 0;
           padding: 0;
           text-align: justify;
           vertical-align: middle;
           display: inline-block;
-          line-height: 1.2;
+          line-height: 1.2em;
+          width: 100%;
         }
         a {
           margin: 15px 0 0;
@@ -109,6 +108,24 @@ export default {
           &:hover {
             background: #333;
             color: #fff;
+          }
+        }
+
+        ::v-deep h2 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 1.5em;
+
+          & + div {
+            padding: 1em;
+          }
+        }
+
+        ::v-deep.with-separator {
+          border-right: 1px solid #efefef;
+
+          @media (max-width:768px) {
+            border-right: none;
           }
         }
       }

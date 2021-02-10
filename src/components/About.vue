@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <h1 class="main-title">A propos</h1>
+    <h1 class="main-title">A Propos</h1>
     <div class="container">
       <div
         class="about-description"
