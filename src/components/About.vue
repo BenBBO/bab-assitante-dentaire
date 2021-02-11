@@ -126,18 +126,18 @@ export default {
           date: "2018",
           label: "ADENTIA",
           description: "Hypnose Ericksonnienne à Paris.",
-        },
-        {
-          date: "2018",
-          label: "UFSBD ",
-          description:
-            "Mise à jour de l’hygiène et la stérilisation en classe virtuelle.",
-        },
+        },      
         {
           date: "2019",
           label: "EMS ",
           description:
             "La parodontie clinique du diagnostic au traitement avec le Dr VANDOORNE.",
+        },
+          {
+          date: "2020",
+          label: "UFSBD ",
+          description:
+            "Mise à jour de l’hygiène et la stérilisation en classe virtuelle.",
         },
         {
           date: "2020",

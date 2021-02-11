@@ -1,26 +1,16 @@
 <template>
   <div id="prestation" class="container">
     <h1 class="main-title">Prestations</h1>
-    <!-- <h2 class="main-title">Préventions</h2> -->
     <div class="row">
       <PrestationCard
-        class="col-lg-12 col-md-12 mt-4"
+        class="col-lg-12 col-md-12 mt-4 prevention-card"
         title="Préventions"
         color="#89001C"
         iconName="hand-holding-medical"
         :description="prevention"
-      />       
+      />
     </div>
-    <!-- <h2 class="main-title">Services</h2> -->
     <div class="row">
-      <!-- <PrestationCard
-        class="col-lg-4 col-md-6 mt-4"
-        title="Techniques"
-        color="#3F6E82"
-        iconName="comment-medical"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
-      /> -->
-
       <PrestationCard
         class="col-lg-6 col-md-6 mt-4"
         title="Enfants"
@@ -75,4 +65,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.prevention-card ::v-deep .face.face2 {
+  height: 350px;
+}
 </style>

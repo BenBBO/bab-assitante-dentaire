@@ -5,10 +5,10 @@
       <div class="name" itemprop="name">Barbara Bouillet</div>
       <p class="titre" itemprop="jobTitle">Assistante dentaire indépendante.</p>      
       <p class="prestations">
-        Accompagnatrice à <b>l'hygiène bucco-dentaire</b> (tout public). Aide à
-        l'évasion et à la détente des <b>enfants</b> pendant leur soin. <br />
-        Assistanat en pose de <b>facettes Lumineers</b>. Assistanat en 4 ou 6
-        mains en <b>implantologie, chirurgie ou tout type de soin</b>.
+        Accompagnatrice à <strong>l'hygiène bucco-dentaire</strong> (tout public). Aide à
+        l'évasion et à la détente des <strong>enfants</strong> pendant leur soin. <br />
+        Assistanat en pose de <strong>facettes Lumineers</strong>. Assistanat en 4 ou 6
+        mains en <strong>implantologie, chirurgie ou tout type de soin</strong>.
       </p>
     </div>
     <div class="indicators">

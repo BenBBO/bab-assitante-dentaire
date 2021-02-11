@@ -41,11 +41,11 @@ export default {
 .prestation-card {
   position: relative;
 
-  .face {
-    height: 200px;
+  .face {    
     transition: 0.5s;
 
     &.face1 {
+      height: 200px;
       position: relative;
       background: #333;
       display: flex;
@@ -75,9 +75,10 @@ export default {
     }
 
     &.face2 {
+      height: 210px;
       position: relative;
       background: #fff;
-      line-height: 160px; // 200px height - 40px de padding
+      line-height: 170px; // 210px height - 40px de padding
       box-sizing: border-box;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
       transform: translateY(-100px);
