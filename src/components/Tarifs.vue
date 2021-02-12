@@ -38,6 +38,20 @@
                     </ul>                 
                 </p>
             </div>
+             <div class="block">
+                <p>ODF enfants et adultes
+                      <ul class="options">
+                        <li class="d-flex">
+                              <div class="duration">15 min à 30 min</div> 
+                              <div class="price">25 €</div>                              
+                            </li>
+                            <li class="d-flex">
+                              <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
+                              <div class="price">18 €</div>
+                          </li>
+                    </ul>                 
+                </p>
+            </div>
         </div>
         <div class="tarif-table">            
             <h2 class="heading">
@@ -89,6 +103,24 @@
                     <li class="d-flex">
                         <div class="duration">Journée (8h)</div> 
                         <div class="price">240 €</div>                              
+                      </li>
+                    </ul>
+                </p>
+            </div>    
+            <div class="block">
+                <p>Assistanat ODF    
+                    <ul class="options">
+                    <li class="d-flex">
+                        <div class="duration">Heure</div> 
+                        <div class="price">33 €</div>                              
+                      </li>
+                    <li class="d-flex">
+                        <div class="duration">1/2 Journée (4h)</div> 
+                        <div class="price">120 €</div>                              
+                      </li>             
+                    <li class="d-flex">
+                        <div class="duration">Journée (8h)</div> 
+                        <div class="price">220 €</div>                              
                       </li>
                     </ul>
                 </p>

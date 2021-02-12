@@ -148,7 +148,7 @@ export default {
         {
           date: "2021",
           label: "Assistante Dentaire Indépendante",
-          description: "Numéro ADELI : Todo",
+          description: "Numéro ADELI : 38 31 0079 9",
         },
       ],
     };
