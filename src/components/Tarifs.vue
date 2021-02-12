@@ -11,42 +11,42 @@
                     Préventions
                 </h2>
                 <div class="block">
-                    <p>Individuelles Adultes ou Enfants
+                    <p>Individuelles Adultes ou Enfants - 1h à 1h30
                         <ul class="options">
                               <li class="d-flex">
-                                  <div class="duration">1h à 1h30</div> 
+                                  <div class="duration">Premier rendez-vous</div> 
                                   <div class="price">65 €</div>                              
                                 </li>
                                 <li class="d-flex">
-                                  <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
+                                  <div class="duration">Rendez-vous suivants</div> 
                                   <div class="price">55 €</div>
                               </li>
                         </ul>  
                     </p>
                 </div>
                 <div class="block">
-                    <p>Collectives Enfants (3 max)
+                    <p>Collectives Enfants (3 max) - 1h à 1h30
                           <ul class="options">
                             <li class="d-flex">
-                                  <div class="duration">1h à 1h30</div> 
+                                  <div class="duration">Premier rendez-vous</div> 
                                   <div class="price">65 €</div>                              
                                 </li>
                                 <li class="d-flex">
-                                  <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
+                                  <div class="duration">Rendez-vous suivants</div>  
                                   <div class="price">55 €</div>
                               </li>
                         </ul>                 
                     </p>
                 </div>
                 <div class="block">
-                    <p>ODF enfants et adultes
+                    <p>ODF Enfants et Adultes - 15 min à 30 min
                           <ul class="options">
-                            <li class="d-flex">
-                                  <div class="duration">15 min à 30 min</div> 
+                            <li class="d-flex">                                  
+                                  <div class="duration">Premier rendez-vous</div> 
                                   <div class="price">25 €</div>                              
                                 </li>
                                 <li class="d-flex">
-                                  <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
+                                  <div class="duration">Rendez-vous suivants</div> 
                                   <div class="price">18 €</div>
                               </li>
                         </ul>                 

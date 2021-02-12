@@ -18,16 +18,16 @@
         </p>
         <p>
           Tout d’abord baignée dans l’univers des enfants, je me voyais plutôt
-          éducatrice de jeunes enfants. Je les considère comme mes muses qui
-          avec leur boule d’énergie me transportent dans leur monde aussi
+          éducatrice de jeunes enfants. Je les considère comme mes muses qui,
+          avec leur boule d’énergie, me transportent dans leur monde aussi
           imaginaire que réel.
         </p>
         <p>
           Des personnes m’ont offert la chance de mettre cet univers entre
-          parenthèses, afin de grandir, d’évoluer, de comprendre, d’apprendre
+          parenthèses, afin de grandir, évoluer, comprendre, apprendre
           pour mieux appréhender demain. Longtemps je me suis cherchée dans
           toutes ces formations et ces conférences qui m’ont passionnée et
-          nourrie de connaissance.
+          nourrie de connaissances.
         </p>
         <p>
           Aujourd’hui grâce à mes formateurs, à ma vie, je me propulse dans une
@@ -35,7 +35,7 @@
           passion, une envie….
         </p>
         <p>Tout se tisse pour construire une belle histoire.</p>
-        <p>Merci à toutes ces personnes qui ont contribuées à l’écrire.</p>
+        <p>Merci à toutes ces personnes qui ont contribué à l’écrire.</p>
       </div>
     </div>
     <div class="timeline-container">
@@ -86,7 +86,7 @@ export default {
           date: "2013",
           label: "LUMINEERS",
           description:
-            "Formé à la pose de facette Lumineers par le Dr Zissermann.",
+            "Formée à la pose de facette Lumineers par le Dr Zissermann.",
         },
         {
           date: "2014",
