@@ -1,134 +1,116 @@
 <template>
     <div id="tarif" class="tarif-container">
         <div class="container">
-        <h1 class="main-title">
-            Tarifs
-        </h1>
-        <h2 class="subtitle">Tarifs HT. TVA non applicable art. 293 du GGI</h2>
-        <div class="d-flex table-container justify-content-evenly align-items-stretch">
-        <div class="tarif-table">
-            <h2 class="heading">
-                Préventions
-            </h2>
-            <div class="block">
-                <p>Individuelles Adultes ou Enfants
+          <h1 class="main-title">
+              Tarifs
+          </h1>
+          <h2 class="subtitle">Tarifs HT. TVA non applicable art. 293 du GGI</h2>
+          <div class="d-flex table-container justify-content-evenly align-items-stretch">
+            <div class="tarif-table">
+                <h2 class="heading">
+                    Préventions
+                </h2>
+                <div class="block">
+                    <p>Individuelles Adultes ou Enfants
+                        <ul class="options">
+                              <li class="d-flex">
+                                  <div class="duration">1h à 1h30</div> 
+                                  <div class="price">65 €</div>                              
+                                </li>
+                                <li class="d-flex">
+                                  <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
+                                  <div class="price">55 €</div>
+                              </li>
+                        </ul>  
+                    </p>
+                </div>
+                <div class="block">
+                    <p>Collectives Enfants (3 max)
+                          <ul class="options">
+                            <li class="d-flex">
+                                  <div class="duration">1h à 1h30</div> 
+                                  <div class="price">65 €</div>                              
+                                </li>
+                                <li class="d-flex">
+                                  <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
+                                  <div class="price">55 €</div>
+                              </li>
+                        </ul>                 
+                    </p>
+                </div>
+                <div class="block">
+                    <p>ODF enfants et adultes
+                          <ul class="options">
+                            <li class="d-flex">
+                                  <div class="duration">15 min à 30 min</div> 
+                                  <div class="price">25 €</div>                              
+                                </li>
+                                <li class="d-flex">
+                                  <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
+                                  <div class="price">18 €</div>
+                              </li>
+                        </ul>                 
+                    </p>
+                </div>
+            </div>
+            <div class="tarif-table">            
+                <h2 class="heading">
+                    Services
+                </h2>
+                <div class="block">
+                <p>Assistanat pour Enfants et ODF
                     <ul class="options">
-                          <li class="d-flex">
-                              <div class="duration">1h à 1h30</div> 
-                              <div class="price">65 €</div>                              
-                            </li>
-                            <li class="d-flex">
-                              <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
-                              <div class="price">55 €</div>
-                          </li>
-                    </ul>  
+                      <li class="d-flex">
+                          <div class="duration">Heure</div> 
+                          <div class="price">33 €</div>                              
+                        </li>
+                      <li class="d-flex">
+                          <div class="duration">1/2 Journée (4h)</div> 
+                          <div class="price">120 €</div>                              
+                        </li>             
+                      <li class="d-flex">
+                          <div class="duration">Journée (8h)</div> 
+                          <div class="price">220 €</div>                              
+                        </li>                    
+                    </ul>
                 </p>
-            </div>
-            <div class="block">
-                <p>Collectives Enfants (3 max)
-                      <ul class="options">
+                </div>
+                <div class="block">
+                <p>Assistanat en Omnipratique    
+                    <ul class="options">        
+                      <li class="d-flex">
+                          <div class="duration">1/2 Journée (4h)</div> 
+                          <div class="price">114 €</div>                              
+                        </li>                   
+                      <li class="d-flex">
+                          <div class="duration">Journée (8h)</div> 
+                          <div class="price">210 €</div>                              
+                        </li>                                                                                       
+                    </ul>
+                </p>
+                </div>
+                <div class="block">
+                    <p>Assistanat en Chirurgie et collage de Facettes    
+                        <ul class="options">
                         <li class="d-flex">
-                              <div class="duration">1h à 1h30</div> 
-                              <div class="price">65 €</div>                              
-                            </li>
-                            <li class="d-flex">
-                              <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
-                              <div class="price">55 €</div>
+                            <div class="duration">Heure</div> 
+                            <div class="price">35 €</div>                              
                           </li>
-                    </ul>                 
-                </p>
-            </div>
-             <div class="block">
-                <p>ODF enfants et adultes
-                      <ul class="options">
                         <li class="d-flex">
-                              <div class="duration">15 min à 30 min</div> 
-                              <div class="price">25 €</div>                              
-                            </li>
-                            <li class="d-flex">
-                              <div class="duration">Les rendez-vous suivants dans les mêmes créneaux</div> 
-                              <div class="price">18 €</div>
+                            <div class="duration">1/2 Journée (4h)</div> 
+                            <div class="price">132 €</div>                              
+                          </li>             
+                        <li class="d-flex">
+                            <div class="duration">Journée (8h)</div> 
+                            <div class="price">240 €</div>                              
                           </li>
-                    </ul>                 
-                </p>
-            </div>
+                        </ul>
+                    </p>
+                </div>                
+          </div>
         </div>
-        <div class="tarif-table">            
-            <h2 class="heading">
-                Services
-            </h2>
-            <div class="block">
-            <p>Assistanat pour Enfants   
-                 <ul class="options">
-                   <li class="d-flex">
-                      <div class="duration">Heure</div> 
-                      <div class="price">33 €</div>                              
-                    </li>
-                   <li class="d-flex">
-                      <div class="duration">1/2 Journée (4h)</div> 
-                      <div class="price">120 €</div>                              
-                    </li>             
-                   <li class="d-flex">
-                      <div class="duration">Journée (8h)</div> 
-                      <div class="price">220 €</div>                              
-                    </li>                    
-                </ul>
-            </p>
-            </div>
-            <div class="block">
-            <p>Assistanat en Omnipratique    
-                 <ul class="options">        
-                   <li class="d-flex">
-                      <div class="duration">1/2 Journée (4h)</div> 
-                      <div class="price">114 €</div>                              
-                    </li>                   
-                   <li class="d-flex">
-                      <div class="duration">Journée (8h)</div> 
-                      <div class="price">210 €</div>                              
-                    </li>                                                                                       
-                </ul>
-            </p>
-            </div>
-            <div class="block">
-                <p>Assistanat en Chirurgie et collage de Facettes    
-                    <ul class="options">
-                    <li class="d-flex">
-                        <div class="duration">Heure</div> 
-                        <div class="price">35 €</div>                              
-                      </li>
-                    <li class="d-flex">
-                        <div class="duration">1/2 Journée (4h)</div> 
-                        <div class="price">132 €</div>                              
-                      </li>             
-                    <li class="d-flex">
-                        <div class="duration">Journée (8h)</div> 
-                        <div class="price">240 €</div>                              
-                      </li>
-                    </ul>
-                </p>
-            </div>    
-            <div class="block">
-                <p>Assistanat ODF    
-                    <ul class="options">
-                    <li class="d-flex">
-                        <div class="duration">Heure</div> 
-                        <div class="price">33 €</div>                              
-                      </li>
-                    <li class="d-flex">
-                        <div class="duration">1/2 Journée (4h)</div> 
-                        <div class="price">120 €</div>                              
-                      </li>             
-                    <li class="d-flex">
-                        <div class="duration">Journée (8h)</div> 
-                        <div class="price">220 €</div>                              
-                      </li>
-                    </ul>
-                </p>
-            </div>    
-    </div>
-    </div>
-    </div>    
-</div>
+      </div>    
+  </div>
 </template>
 <script>
 export default {
@@ -136,7 +118,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
 $bgcolor: rgb(203 165 40 / 0.5);
 $headingbg: #3f6e82;
 
