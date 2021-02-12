@@ -13,7 +13,11 @@
           <b-nav-item href="#contact">Contact</b-nav-item>
         </b-navbar-nav>
 
-        <b-navbar-nav class="contact-info" itemscope itemtype="http://schema.org/Organization">
+        <b-navbar-nav
+          class="contact-info"
+          itemscope
+          itemtype="http://schema.org/Organization"
+        >
           <div class="contact">
             <a href="tel:0652867160">
               <i class="fas fa-mobile-alt"></i>
@@ -21,10 +25,16 @@
             >
           </div>
           <div class="contact">
-            <a href="mailto:barbara38.assistantedentaire@gmail.com">
-              <i class="far fa-envelope"></i
-              ><span itemprop="email"> barbara38.assistantedentaire@gmail.com</span></a
+            <i class="far fa-envelope"></i
+            ><span
+              itemprop="email"
+              class="cryptedEmail"
+              data-name="barbara38.assistantedentaire"
+              data-domain="gmail"
+              data-tld="com"
+              onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"
             >
+            </span>
           </div>
         </b-navbar-nav>
       </b-collapse>
@@ -71,13 +81,18 @@ export default {
       .contact {
         margin-left: 1em;
         font-size: 0.8em;
+        cursor: pointer;
         a {
           text-decoration: none;
           color: inherit;
-          span {
-            margin-left: 0.5em;
-          }
         }
+        span {
+          margin-left: 0.5em;
+        }
+      }
+
+      .cryptedEmail:after {
+        content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
       }
     }
   }

@@ -1,17 +1,32 @@
 <template>
-  <div id="contact" class="contact-container" itemscope itemtype="http://schema.org/Organization">
+  <div
+    id="contact"
+    class="contact-container"
+    itemscope
+    itemtype="http://schema.org/Organization"
+  >
     <div class="container">
       <h1 class="main-title">Contact</h1>
       <div class="d-flex justify-content-center">
         <!-- v-b-modal.logo-modal -->
-        <img src="@/assets/logo.webp" itemprop="logo" alt="logo - Assistante dentaire 38"  />
+        <img
+          src="@/assets/logo.webp"
+          itemprop="logo"
+          alt="logo - Assistante dentaire 38"
+        />
       </div>
-      <div class="d-flex justify-content-around contact-info" >
+      <div class="d-flex justify-content-around contact-info">
         <div class="d-flex flex-column text-center">
           <h2>Mail</h2>
-          <a href="mailto:barbara38.assistantedentaire@gmail.com" itemprop="email"
-            >barbara38.assistantedentaire@gmail.com</a
+          <span
+            itemprop="email"
+            class="cryptedEmail"
+            data-name="barbara38.assistantedentaire"
+            data-domain="gmail"
+            data-tld="com"
+            onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"
           >
+          </span>
         </div>
         <div class="d-flex flex-column text-center">
           <h2>Téléphone</h2>
@@ -35,10 +50,8 @@
 
     <b-modal id="logo-modal" size="lg" hide-footer>
       <template #modal-title> Notre logo </template>
-     <LogoInformation />
-
-      </b-modal
-    >
+      <LogoInformation />
+    </b-modal>
   </div>
 </template>
 
@@ -76,6 +89,13 @@ export default {
       font-size: 1.2rem;
       color: #6d91a0;
     }
+
+    .cryptedEmail {
+      cursor: pointer;
+      &::after {
+        content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+      }
+    }
   }
 }
 
@@ -105,5 +125,4 @@ export default {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
-
 </style>
