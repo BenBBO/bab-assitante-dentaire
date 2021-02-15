@@ -34,7 +34,7 @@
       />
       <PrestationCard
         class="col-lg-6 col-md-6 mt-4"
-        title="Facette"
+        title="Facettes"
         color="#CBA528"
         iconName="tooth"
         :description="facette"

@@ -86,7 +86,7 @@ export default {
           date: "2013",
           label: "LUMINEERS",
           description:
-            "Formée à la pose de facette Lumineers par le Dr Zissermann.",
+            "Formée à la pose de facettes Lumineers par le Dr Zissermann.",
         },
         {
           date: "2014",
